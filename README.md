@@ -58,11 +58,11 @@ All telemetry was simulated in Python, and validation was done via screenshots a
 
 ## Repo Contents
 
-   *azure-iot-pipeline/
-   *├── iot_sender.py           — Python script to publish simulated telemetry
-   *├── Report.pdf              — Full report with screenshots and workflow
-   *├── README.md               — Project documentation and summary
-   *└── .gitignore              — Excludes keys, envs, and build artifacts
+      azure-iot-pipeline/
+      ├── iot_sender.py           — Python script to publish simulated telemetry
+      ├── Report.pdf              — Full report with screenshots and workflow
+      ├── README.md               — Project documentation and summary
+      └── .gitignore              — Excludes keys, envs, and build artifacts
 
 ---
 
