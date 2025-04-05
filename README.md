@@ -55,10 +55,10 @@ Repo Contents
 
 azure-iot-pipeline/
 
-├── iot_sender.py           — Python script to publish simulated telemetry  
-├── Report.pdf   	    — Full report with screenshots and workflow  
-├── README.md               — Project overview  
-└── .gitignore              — Excludes keys, envs, and build artifacts  
+		├── iot_sender.py           — Python script to publish simulated telemetry  
+		├── Report.pdf   	    — Full report with screenshots and workflow  
+		├── README.md               — Project overview  
+		└── .gitignore              — Excludes keys, envs, and build artifacts  
 
 -------------------------------------------------------------------------------------- 
 
