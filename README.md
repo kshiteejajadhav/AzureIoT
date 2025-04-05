@@ -54,6 +54,7 @@ This project does not include hardware simulation. All telemetry was generated v
 Repo Contents
 
 azure-iot-pipeline/
+
 ├── iot_sender.py           — Python script to publish simulated telemetry  
 ├── Report.pdf   	    — Full report with screenshots and workflow  
 ├── README.md               — Project overview  
