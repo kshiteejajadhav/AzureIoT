@@ -53,11 +53,11 @@ This project does not include hardware simulation. All telemetry was generated v
 
 Repo Contents
 
-azure-iot-pipeline/
-iot_sender.py — Python script to publish simulated telemetry
-InClass_10_Report.pdf — Full report with screenshots and workflow
-README.md — Project overview
-.gitignore — Excludes keys, envs, and build artifacts 
+ azure-iot-pipeline/
+ iot_sender.py — Python script to publish simulated telemetry
+ InClass_10_Report.pdf — Full report with screenshots and workflow
+ README.md — Project overview
+ .gitignore — Excludes keys, envs, and build artifacts 
 
 -------------------------------------------------------------------------------------- 
 
@@ -70,8 +70,8 @@ The connection string in the report is for academic demonstration only.
 
 Technologies Used
 
-Azure IoT Hub
-Azure Stream Analytics
-Azure Blob Storage
-Python 3.x
-Azure IoT Device SDK
+ Azure IoT Hub
+ Azure Stream Analytics
+ Azure Blob Storage
+ Python 3.x
+ Azure IoT Device SDK
