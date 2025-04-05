@@ -1,34 +1,37 @@
-# AzureIoT + Stream Analytics Pipeline
 
---------------------------------------------------------------------------------------
+# Azure IoT Hub + Stream Analytics Pipeline
 
- Summary of Work
- This project documents the end-to-end setup of an Azure IoT telemetry pipeline. The objective was to configure an IoT Hub, register a virtual device, simulate telemetry data using Python, and process this data using Azure Stream Analytics with storage output.
- 
---------------------------------------------------------------------------------------
+---
 
-Key Components Implemented
+## Summary of Work
 
-1. Azure IoT Hub Creation
-Configured a new IoT Hub instance to serve as a secure cloud gateway.
+This project documents the complete setup of an Azure IoT telemetry pipeline. The goal was to configure an IoT Hub, register a virtual device, simulate telemetry using Python, and process that data in real time using Azure Stream Analytics, with results stored in Azure Blob Storage.
 
-2. Device Provisioning
-Registered an IoT device with symmetric key authentication to securely transmit telemetry.
+---
 
-3. Python-Based Telemetry Simulation
-Used a Python script to generate and publish random temperature and humidity readings to the IoT Hub.
+## Key Components Implemented
 
-4. Azure Stream Analytics Job
-Set up a Stream Analytics pipeline to consume IoT telemetry in real time and route it to an output.
+1. **Azure IoT Hub Creation**  
+   Configured a secure cloud gateway using Azure IoT Hub.
 
-5. Azure Blob Storage Output
-Configured Azure Blob Storage as the data sink for processed telemetry data.
+2. **Device Provisioning**  
+   Registered a virtual device with symmetric key authentication for telemetry transmission.
 
-6. Validation and Monitoring
-All steps were verified using Azure Portal metrics, console outputs, and screenshots, ensuring reliable data flow.
+3. **Python-Based Telemetry Simulation**  
+   Used a Python script to publish simulated temperature and humidity values to IoT Hub.
 
---------------------------------------------------------------------------------------
-Screenshots (Included in PDF Report)
+4. **Azure Stream Analytics Job**  
+   Built a real-time data stream pipeline to process telemetry data from the IoT Hub.
+
+5. **Azure Blob Storage Output**  
+   Routed processed data into Blob Storage for persistence and analysis.
+
+6. **Validation and Monitoring**  
+   Verified end-to-end data flow using Azure Portal dashboards, logs, and metrics.
+
+---
+
+## Screenshots (See Report.pdf)
 
 * IoT Hub Overview  
 * Device Registration with Connection String  
@@ -36,42 +39,46 @@ Screenshots (Included in PDF Report)
 * Stream Analytics Job Configuration  
 * Job Running Status  
 * Blob Storage Output Validation  
-* Live Message Monitoring Console  the end of my life
-  
---------------------------------------------------------------------------------------
-Reflection
+* Live Message Monitoring Console  
 
-Completing this project gave me practical exposure to building cloud-based IoT pipelines. I learned how various Azure components — from device provisioning to real-time analytics — integrate to form a scalable solution. Debugging connection issues and understanding how telemetry flows between services gave me a deeper appreciation for cloud infrastructure and IoT development.
+---
 
---------------------------------------------------------------------------------------
+## Reflection
 
-Disclaimer
+> Completing this project offered hands-on experience with Azure IoT architecture. It deepened my understanding of cloud-based telemetry processing, secure device provisioning, and real-time data stream management. The debugging process and system integration provided valuable practical insight into scalable IoT solutions.
 
-This project does not include hardware simulation. All telemetry was generated via Python scripts, and all results are demonstrated through configuration and monitoring screenshots provided in the  report.
+---
 
---------------------------------------------------------------------------------------
+## Disclaimer
 
-Repo Contents
+This is a **documentation-only project** with no hardware simulation.  
+All telemetry was simulated in Python, and validation was done via screenshots and dashboard verification.
+
+---
+
+## Repo Contents
 
 azure-iot-pipeline/
+├── iot_sender.py           — Python script to publish simulated telemetry
+├── Report.pdf              — Full report with screenshots and workflow
+├── README.md               — Project documentation and summary
+└── .gitignore              — Excludes keys, envs, and build artifacts
 
-		├── iot_sender.py           — Python script to publish simulated telemetry  
-		├── Report.pdf   	    — Full report with screenshots and workflow  
-		├── README.md               — Project overview  
-		└── .gitignore              — Excludes keys, envs, and build artifacts  
+---
 
--------------------------------------------------------------------------------------- 
+## Security Notice
 
-Security Notice
+Do not share or commit any real connection strings, keys, or credentials publicly.  
+All values used in this project are academic placeholders for demonstration only.
 
-Do not share or commit connection strings, keys, or credentials publicly.
-The connection string in the report is for academic demonstration only.
+---
 
---------------------------------------------------------------------------------------
+## Technologies Used
 
-Technologies Used
-	•	Azure IoT Hub
-	•	Azure Stream Analytics
-	•	Azure Blob Storage
-	•	Python 3.x
-	•	Azure IoT Device SDK
+- Azure IoT Hub  
+- Azure Stream Analytics  
+- Azure Blob Storage  
+- Python 3.x  
+- Azure IoT Device SDK
+
+---
