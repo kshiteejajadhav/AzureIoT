@@ -6,7 +6,7 @@ from azure.iot.device import IoTHubDeviceClient, Message
 
 # Get connection string and device ID from environment variables
 CONNECTION_STRING = "YOUR_CONNECTION_STRING" # Add your connection string here
-DEVICE_ID = 'IoTDeviceKshiteeja' # Add your device ID here
+DEVICE_ID = 'YOUR DEVICE_ID' # Add your device ID here
 
 if not CONNECTION_STRING or not DEVICE_ID:
     raise ValueError("Please set IOT_HUB_CONNECTION_STRING and DEVICE_ID in your .env file")
